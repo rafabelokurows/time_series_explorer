@@ -18,13 +18,13 @@ color_pal = sns.color_palette()
 line_color_1 = '#6b9080'
 
 #### STREAMLIT PAGE #### 
-st.set_page_config(page_title="Time Series Analysis", layout = 'wide', initial_sidebar_state = 'auto',page_icon = '📈')
+st.set_page_config(page_title="Daily Time Series Explorer", layout = 'wide', initial_sidebar_state = 'auto',page_icon = '📈')
 
-st.title("Time Series Auto Explorer")
-st.markdown("Load your own CSV file to see basic stats, perform statistical checks and a simple little forecasting for your time series")
+st.title("Daily Time Series Explorer")
+st.markdown("Load your own Time Series dataset to see some basic stats, perform statistical checks and baseline forecasting for your Time Series")
 
 #### SIDEBAR ####
-uploaded_file = st.sidebar.file_uploader("Choose a Time Series dataset",help="Teste",accept_multiple_files=False)
+uploaded_file = st.sidebar.file_uploader("Choose a Time Series dataset",help="Only CSV files - two columns with date and value",accept_multiple_files=False)
 option = st.sidebar.selectbox(
     "Don't have any datasets? Try some sample data",
     ('DEI - Economic Indicator for Portugal (2020-current)', 'EUR to USD rates (2004-current)','Amazon Stock data (2013-current)',None),index=None,
@@ -79,16 +79,16 @@ if uploaded_file is not None:
     filename = uploaded_file
     ts_data = read_data(filename)
 elif option == "DEI - Economic Indicator for Portugal (2020-current)":
-    filename = "C:\\Users\\BELOKUROWSR\\Desktop\\time_series_explorer\\dei.csv"
+    filename = "./data/dei.csv"
     ts_data = read_data(filename)
 elif option == "EUR to USD rates (2004-current)":
-    filename = "C:\\Users\\BELOKUROWSR\\Desktop\\time_series_explorer\\eur_to_usd.csv"
+    filename = "./data/eur_to_usd.csv"
     ts_data = read_data(filename)
 elif option == "Amazon Stock data (2013-current)":
-    filename = "C:\\Users\\BELOKUROWSR\\Desktop\\time_series_explorer\\amazon_stock.csv"
+    filename = "./data/amazon_stock.csv"
     ts_data = read_data(filename)
 else:
-    st.info("Waiting for dataset...",icon="ℹ️")
+    st.info("Waiting for data to be loaded...",icon="ℹ️")
 
 if uploaded_file is not None or option is not None:
     #### LOADING FILES ####
