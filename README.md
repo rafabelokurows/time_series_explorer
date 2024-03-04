@@ -2,11 +2,13 @@
 
 ## Goal
 Streamlit app that allows the user to import their own time series CSV file and that gives a quick overview of time series features  
-HEADS UP: Only works with daily time series for now.
+HEADS UP: Only works with daily time series for now.  
+
 Powered by: 
-- Streamlit
-- Pandas
-- Pytimetk
+- `streamlit`: hosting this cool web app
+- `pandas`: data handling in general
+- `pytimetk`: time series features and anomaly detection
+- `prophet`: forecasting
 
 [Live app](https://egcvjidpswxzp7p3ictpax.streamlit.app/)  
 
