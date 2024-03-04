@@ -1,9 +1,17 @@
 # Daily Time Series Explorer
 
 ## Goal
-Streamlit app that allows the user to import their own time series CSV file and that gives a quick overview of time series features
+Streamlit app that allows the user to import their own time series CSV file and that gives a quick overview of time series features  
 HEADS UP: Only works with daily time series for now.
-Powered by: Streamlit
+Powered by: 
+- Streamlit
+- Pandas
+- Pytimetk
+
+[Live app](https://egcvjidpswxzp7p3ictpax.streamlit.app/)  
+
+Here's a quick demo:
+![Demo](./other/demo_daily_time_series_explorer.gif)
 
 ## Features
 - Bring own dataset or load sample data that I have provided 
@@ -39,3 +47,6 @@ Some screenshots:
 ![image](https://github.com/rafabelokurows/time_series_explorer/assets/55976107/03161477-6f32-455c-bfdd-ba4dea7c3577)
 
 ![image](https://github.com/rafabelokurows/time_series_explorer/assets/55976107/6852f274-f5eb-4657-a37b-b859c4c8e0ad)
+
+![image](https://github.com/rafabelokurows/time_series_explorer/assets/55976107/7ad86b2a-a847-477d-9b87-c9b2b6f420f7)
+
