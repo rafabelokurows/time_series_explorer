@@ -1,4 +1,4 @@
-# Daily Time Series Explorer
+# Time Series Explorer 📈
 
 ## Goal
 Streamlit app that allows the user to import their own time series CSV file and that gives a quick overview of time series features  
