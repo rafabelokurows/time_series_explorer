@@ -5,7 +5,7 @@ Streamlit app that allows the user to load their own time series CSV file and th
 
 [Live app](https://egcvjidpswxzp7p3ictpax.streamlit.app/)  
 
-Here's how it works:
+Here's how you could use it:
 ![Demo](./other/demo_daily_time_series_explorer.gif)
 
 Powered by: 
