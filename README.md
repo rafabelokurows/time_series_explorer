@@ -1,6 +1,6 @@
 # Time Series Explorer 📈
 
-## Goal
+## What it does
 Streamlit app that allows the user to load their own time series CSV file and that gives a quick overview of time series features, perform statistical checks and produce short-term forecasts
 
 [Live app](https://egcvjidpswxzp7p3ictpax.streamlit.app/)  
